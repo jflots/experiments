@@ -1,0 +1,59 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.opendb
+/**/x64/**/*
+/**/ipch/**/*
+*.user
+*.db
+# Precompiled Headers
+*.gch
+*.pch
+*.tlog
+*.vspx
+*.lasbuildstate
+*.psess
+*.iobj
+*.ipdb
+*.enc
+*.ilk
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.pdb
+*.log
+*.pdb
+*.idb
+*.db
+*.suo
+
+# MSVC specific temporary files
+*.sdf
+*.opensdf
+
+# Local build outputs
+obj
+cpp-dependencies
+cpp-dependencies-unittests
+
+MSVC/x64/Debug/
+MSVC/*.opendb
+build
