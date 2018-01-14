@@ -18,9 +18,9 @@ public:
 		delete[] m_pData;
 	}
 
-	virtual T* Ptr() override { return m_pData; }
+	inline virtual T* Ptr() override { return m_pData; }
 
-	virtual unsigned int Size() override { return m_uiSize; }
+	inline virtual unsigned int Size() override { return m_uiSize; }
 
 	void Allocate(unsigned int size) {
 		m_pData = new T[size]; m_uiSize = size;

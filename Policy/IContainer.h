@@ -4,8 +4,8 @@ template <typename T>
 class IContainer
 {
 public:
-	virtual T* Ptr() = 0;
-	virtual unsigned int Size() = 0;
+	inline virtual T* Ptr() = 0;
+	inline virtual unsigned int Size() = 0;
 
 	T* First() { return Ptr(); }
 	T* Last() { return Ptr() + Size() - 1; }
