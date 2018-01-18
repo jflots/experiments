@@ -1,7 +1,21 @@
 #pragma once
 
+/*!
+ * \file Message.h
+ * \date 2018/01/14 15:17
+ *
+ * \author jflots
+ * Contact: user@company.com
+ *
+ * \brief 
+ *
+ * TODO: long description
+ *
+ * \note
+*/
 
 #include <string>
+#include <memory>
 
 namespace Logger
 {
@@ -30,6 +44,8 @@ namespace Logger
 		void setDetails(std::string&& details);
 
 		const std::string& getDetails();
+
+		void appendMessage(const std::string& msg);
 	};
 
 	void Message::setModule(const std::string& module)
@@ -51,4 +67,28 @@ namespace Logger
 	{
 		return m_details;
 	}
+
+	void Message::appendMessage(const std::string& msg)
+	{
+		m_details += msg;
+	}
+
+	using MessagePtr = std::shared_ptr<Message>;
+
+
+	class LogStream
+	{
+		public:
+		LogStream() = default;
+
+		
+	};
+
+	LogStream& operator<<(LogStream& logStream, const std::string& msg)
+	{
+
+	}
+
+	
 }
+
